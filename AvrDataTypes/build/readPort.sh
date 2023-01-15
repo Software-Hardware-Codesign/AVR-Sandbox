@@ -1,18 +1,44 @@
-PORT='/dev/ttyUSB0'
-BAUD_RATE='57600'
+#**
+#* Ccoffee Build tool, manual build, alpha-v1.
+#*
+#* @author pavl_g.
+#*#
+#!/bin/sh
 
-echo "\n"
+canonical_link=`readlink -f ${0}`
+build_dir=`dirname $canonical_link`
 
-echo "Started reading PORT [$PORT] to terminate hold [CTRL+A+D]\n"
+source "${build_dir}/variables.sh"
 
-adjustBaudRate() {
+function prepare() {
+    sudo apt-get install screen 
+}
+
+function adjustBaudRate() {
     stty -F $1 $2
 }
 
-readPort() {
-    screen "$1" "$BAUD_RATE"
+function holdStill() {
+    for ((i = 0; i < 4; i++))
+    do 
+        sleep 2
+        printf "....."
+    done
+    printf "\n"
 }
 
+function readPort() {
+    screen -R "READ-PORT" -U "$1" "$BAUD_RATE"
+}
+
+printf "Preparing the [screen] util\n"
+
+prepare
+
 adjustBaudRate "$PORT" "$BAUD_RATE"
+
+printf "Started reading PORT [$PORT] to terminate hold [CTRL+A+D]\n"
+
+holdStill
 
 readPort "$PORT"

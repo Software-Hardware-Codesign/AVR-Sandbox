@@ -1,5 +1,15 @@
-source setup-sanbox.sh
-source CommonVariables.sh
+#**
+#* Ccoffee Build tool, manual build, alpha-v1.
+#*
+#* @author pavl_g.
+#*#
+#!/bin/sh
+
+canonical_link=`readlink -f ${0}`
+sandbox_dir=`dirname $canonical_link`
+
+source "${sandbox_dir}/setup-sanbox.sh"
+source "${$sandbox_dir}/common-variables.sh"
 
 confirmDownload
 

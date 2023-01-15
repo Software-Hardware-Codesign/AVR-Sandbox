@@ -1,4 +1,11 @@
 
+#**
+#* Ccoffee Build tool, manual build, alpha-v1.
+#*
+#* @author pavl_g.
+#*#
+#!/bin/sh
+
 # setup variables
 avrgcc_compressed='avr-gcc.tar.gz'
 
