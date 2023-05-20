@@ -1,0 +1,149 @@
+
+udr_sprintln.c.o:
+00000000 b _ZL13uart_instance
+         U _ZN4uart6sprintEPc
+00000000 T _ZN4uart8sprintlnEPc
+0000003e a __SP_H__
+0000003d a __SP_L__
+0000003f a __SREG__
+         U __do_clear_bss
+         U __do_copy_data
+00000000 a __tmp_reg__
+00000001 a __zero_reg__
+
+transmitter_isr.c.o:
+00000000 b _ZL13uart_instance
+0000000e T _ZN4uart18stopTransmitterISREv
+00000000 T _ZN4uart19startTransmitterISREv
+         U _ZN4uart5state23onDataTransmitCompletedEh
+0000003e a __SP_H__
+0000003d a __SP_L__
+0000003f a __SREG__
+         U __do_clear_bss
+00000000 a __tmp_reg__
+0000001a T __vector_20
+00000001 a __zero_reg__
+
+udr_println.c.o:
+00000000 b _ZL13uart_instance
+         U _ZN4uart5printExh
+         U _ZN4uart6sprintEPc
+00000000 T _ZN4uart7printlnExh
+0000003e a __SP_H__
+0000003d a __SP_L__
+0000003f a __SREG__
+         U __do_clear_bss
+         U __do_copy_data
+00000000 a __tmp_reg__
+00000001 a __zero_reg__
+
+start.c.o:
+00000000 b _ZL13uart_instance
+00000000 T _ZN4uart13startProtocolEj
+         U _ZN4uart16startReceiverISREv
+         U _ZN4uart5state17onProtocolStartedEv
+0000003e a __SP_H__
+0000003d a __SP_L__
+0000003f a __SREG__
+         U __do_clear_bss
+00000000 a __tmp_reg__
+00000001 a __zero_reg__
+
+stop.c.o:
+00000000 b _ZL13uart_instance
+00000000 T _ZN4uart12stopProtocolEv
+         U _ZN4uart5state17onProtocolStoppedEv
+0000003e a __SP_H__
+0000003d a __SP_L__
+0000003f a __SREG__
+         U __do_clear_bss
+00000000 a __tmp_reg__
+00000001 a __zero_reg__
+
+udr_print.c.o:
+00000000 b _ZL13uart_instance
+00000000 T _ZN4uart5printExh
+         U _ZN4uart6cprintEPc
+0000003e a __SP_H__
+0000003d a __SP_L__
+0000003f a __SREG__
+         U __do_clear_bss
+         U __itoa
+00000000 a __tmp_reg__
+00000001 a __zero_reg__
+         U calloc
+         U free
+
+udr_plain_io.c.o:
+00000000 b _ZL13uart_instance
+         U _ZN4uart19startTransmitterISREv
+00000000 T _ZN4uart23setTransmitDataRegisterEPKh
+         U _ZN4uart31startDataRegisterEmptyBufferISREv
+00000020 T _ZN4uart9readASCIIEv
+0000003e a __SP_H__
+0000003d a __SP_L__
+0000003f a __SREG__
+         U __do_clear_bss
+00000000 a __tmp_reg__
+00000001 a __zero_reg__
+
+udr_sprint.c.o:
+00000000 b _ZL13uart_instance
+         U _ZN4uart6cprintEPc
+00000000 T _ZN4uart6sprintEPc
+0000003e a __SP_H__
+0000003d a __SP_L__
+0000003f a __SREG__
+         U __do_clear_bss
+00000000 a __tmp_reg__
+00000001 a __zero_reg__
+
+udr_reset_isr.c.o:
+00000000 b _ZL13uart_instance
+0000000e T _ZN4uart30stopDataRegisterEmptyBufferISREv
+00000000 T _ZN4uart31startDataRegisterEmptyBufferISREv
+         U _ZN4uart5state19onDataBufferClearedEPKh
+0000003e a __SP_H__
+0000003d a __SP_L__
+0000003f a __SREG__
+         U __do_clear_bss
+00000000 a __tmp_reg__
+0000001a T __vector_19
+00000001 a __zero_reg__
+
+udr_cprint.c.o:
+00000000 b _ZL13uart_instance
+         U _ZN4uart19startTransmitterISREv
+00000000 T _ZN4uart6cprintEPc
+0000003e a __SP_H__
+0000003d a __SP_L__
+0000003f a __SREG__
+         U __do_clear_bss
+00000000 a __tmp_reg__
+00000001 a __zero_reg__
+
+udr_cprintln.c.o:
+00000000 b _ZL13uart_instance
+         U _ZN4uart6cprintEPc
+         U _ZN4uart6sprintEPc
+00000000 T _ZN4uart8cprintlnEPc
+0000003e a __SP_H__
+0000003d a __SP_L__
+0000003f a __SREG__
+         U __do_clear_bss
+         U __do_copy_data
+00000000 a __tmp_reg__
+00000001 a __zero_reg__
+
+receiver_isr.c.o:
+00000000 b _ZL13uart_instance
+0000005e T _ZN4uart15stopReceiverISREv
+00000050 T _ZN4uart16startReceiverISREv
+         U _ZN4uart5state22onDataReceiveCompletedEh
+0000003e a __SP_H__
+0000003d a __SP_L__
+0000003f a __SREG__
+         U __do_clear_bss
+00000000 a __tmp_reg__
+00000000 T __vector_18
+00000001 a __zero_reg__
