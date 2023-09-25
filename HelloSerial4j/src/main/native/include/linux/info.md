@@ -1,0 +1,1 @@
+# Serial4j API Native Side designed for Linux/Unix

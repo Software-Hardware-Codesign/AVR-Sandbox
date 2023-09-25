@@ -1,0 +1,12 @@
+com.serial4j.core.errno
+com.serial4j.core.serial
+com.serial4j.core.serial.control
+com.serial4j.core.serial.entity
+com.serial4j.core.serial.entity.impl
+com.serial4j.core.serial.monitor
+com.serial4j.core.serial.throwable
+com.serial4j.core.util.natives
+com.serial4j.core.util.process
+com.serial4j.example
+com.serial4j.example.monitor
+com.serial4j.example.serial4j
